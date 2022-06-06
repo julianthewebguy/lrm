@@ -51,6 +51,27 @@ function myFunction() {
     }
 }
 
+        // Make Nav Transparent on Home and home fill width
+        $(window).load(function () {
+            var url = location.href;
+            var headerDiv = document.getElementsByClassName('row-fluid')[1];
+            var headerDiv2 = document.getElementsByClassName('row-fluid')[2];
+            var herogrid = document.getElementsByClassName('heroGrid')[0];
+
+            if (url == "https://www.playadelcarmenrealestatemexico.com/" || url == "http://www.playadelcarmenrealestatemexico.com/" || url == "https://www.playadelcarmenrealestatemexico.com/#" || url == "http://www.playadelcarmenrealestatemexico.com/#" || (window.location.href.indexOf('https://www.playadelcarmenrealestatemexico.com/homes.aspx?__ts=') == 0))  {
+                headerDiv.classList.add('transparent');
+            }
+            if (url == "https://www.playadelcarmenrealestatemexico.com/" || url == "http://www.playadelcarmenrealestatemexico.com/" || url == "https://www.playadelcarmenrealestatemexico.com/#" || url == "http://www.playadelcarmenrealestatemexico.com/#" || (window.location.href.indexOf('https://www.playadelcarmenrealestatemexico.com/homes.aspx?__ts=') == 0))  {
+                headerDiv2.classList.add('fullwidth');
+            }
+            $(".heroGrid").css("opacity", "1")
+            $(".lds-spinner").css("opacity", "0")
+            $(".lds-spinner").css("z-index", "-1")
+
+
+
+        });
+
 
 
 $(window).scroll(function () {
