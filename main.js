@@ -74,13 +74,3 @@ function myFunction() {
 
 
 
-$(window).scroll(function () {
-    if ($(this).scrollTop()) {
-        $('#toTop').css('opacity', '1');
-    } else {
-        $('#toTop').css('opacity', '0');
-    }
-});
-
-var googletagmanager = '<script defer charset="utf-8" type="text/javascript" src="https://cdn.jsdelivr.net/gh/julianthewebguy/lrm@01119dab35b4ccf05b7fa3782154e51e8aeeb252/GTM.js"></script>;'
-document.getElementsByTagName("head")[0].append(googletagmanager);
